@@ -583,7 +583,8 @@ a.btn2:after {
   left: 0;
   top: 0;
   border-radius: 5px;
-  background: #ffffff;
+  background: black;
+  color: #ffffff;
   z-index: -1;
   transition: all 0.4s;
 }
