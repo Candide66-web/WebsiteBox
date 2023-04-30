@@ -531,7 +531,7 @@ a.action_btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-align: center;
-  background: #4f95ff;
+  background: rgba(4, 14, 29, 0.493);
   display: inline-block;
   padding: 15px 25px;
   border-radius: 5px;
@@ -1642,6 +1642,7 @@ APPS AREA CSS
 COUNTER AREA CSS
 */
 .screen_carousel {
+  width: 100%;
   margin-top: 100px;
 }
 .screen_carousel .owl-dots {
@@ -1839,4 +1840,9 @@ COMMON AREA CSS
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.scroll li a:hover{
+  color: black;
+  transition: 1s;
 }
