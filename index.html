@@ -740,7 +740,7 @@
 	<!--::::: FAQ AREA END :::::::-->
 
 	<!--::::: APPS AREA START :::::::-->
-	<div class="apps_area section-padding-bottom">
+	<div class="apps_area section-padding-bottom"  style="background-image: url(assets/img/screen/B/bg8.png);height: 85%!important;">
 		<div class="container">
 			<div class="row">
 				<!-- <div class="col-lg-8 col-xl-6 align-self-center">
@@ -763,12 +763,12 @@
 					</div>
 				</div> -->
 				<div class="col-lg-4 col-xl-6 align-self-center">
-					<div class="apps_app text-right">
-						<img class="apps_img" src="assets/img/screen/screen14.png" alt="">
+					<div class="apps_app text-right w-50 mt-5">
+						<video src="assets/img/screen/B/video.mp4" style="width: 100%;" autoplay controls></video>
 					</div>
-					<div class="apps_app mobile_img">
-						<img src="assets/img/screen/screen14.png" alt="">
-					</div>
+					<!-- <div class="apps_app mobile_img">
+						<video src="assets/img/screen/B/video.mp4"></video>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -880,10 +880,34 @@
 	</footer>
 	<!--::::: FOOTER AREA END :::::::-->
 
-	<div class="go-to-top" style="position: fixed;bottom: 50px;right: 10px;z-index:100;">
+		<script>
+			// Afficher le bouton de retour en haut lorsqu'on descend la page de plus de 20 pixels
+			window.onscroll = function() {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				document.getElementById("go-to-top").style.display = "block";
+			} else {
+				document.getElementById("go-to-top").style.display = "none";
+			}
+			};
+
+			// Ajouter une animation de scroll vers le haut lorsque le bouton est cliqué
+			document.getElementById("go-to-top").addEventListener("click", function(event) {
+			event.preventDefault();
+			document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+			});
+
+		</script>
+
+	<div id="go-to-top" style="position: fixed;bottom: 50px;right: 10px;z-index:100;">
 		<a href="#"><img src="assets/img/logo/top.png" alt="Image de retour en haut"></a>
 	</div>
 
+	
 
 	<!--::::: ALL JS FILES :::::::-->
 	<script src="assets/js/plugins/jquery.2.1.0.min.js"></script>
