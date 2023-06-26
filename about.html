@@ -6,12 +6,12 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Box</title>
+	<title>Box - A propos</title>
 
-	<!--::::: FABICON ICON :::::::-->
-	<link rel="icon" href="assets/img/logo/fabicon.png">
+	<!--::::: FAVICON ICON :::::::-->
+	<link rel="icon" href="assets/img/logo/favicon.png">
 
-    <!--::::: ALL CSS FILES :::::::-->
+	<!--::::: ALL CSS FILES :::::::-->
 	<link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/plugins/animate.min.css">
 	<link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
@@ -23,32 +23,44 @@
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="style.css">
 
+	<style>
+		.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
+}
+
+	</style>
+
 </head>
 
 <body>
-	
+
 	<!--::::: PRELOADER :::::::-->
 
 	<div class="mesh-loader">
-      <div class="set-one">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-      <div class="set-two">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
-    <!--::::: PRELOADER :::::::-->
+		<div class="set-one">
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+		<div class="set-two">
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--::::: PRELOADER :::::::-->
 
-    <!--::::: HEADER AREA START :::::::-->
-	<header>
+	<!--::::: HEADER AREA START :::::::-->
+	<header style="position:fixed;left: 0;right: 0;top: 0;z-index:10;">
 		<div class="header_area header_absolute" id="header" style="background-color:rgb(0, 0, 0);">
 			<div class="container">
 				<div class="row">
 					<div class="col-6 col-lg-2 align-self-center">
 						<div class="logo">
-							<a href="index.html"><img src="assets/img/logo/logo.png" alt="image"  width="80" ></a>
+							<a href="index.html"><img src="assets/img/logo/logo.png" alt="image" width="80"></a>
 						</div>
 					</div>
 					<div class="col-6 col-lg-7 align-self-center">
@@ -72,7 +84,7 @@
 										<li><a href="single.html">Single Blog</a></li>
 										<li><a href="single_left.html">Single Blog V2</a></li>
 									</ul> -->
-								</li>
+									</li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
@@ -86,8 +98,22 @@
 		</div>
 	</header>
 
-	<section class="" style="height: 60vh;background-image: url(assets/img/about.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
+	<section class="image-head-wrapper" style="height:80vh;margin-top:-50px!important;background-image: url(assets/img/abt.jpg);background-repeat: no-repeat;background-position: center;background-size: cover; display: flex; align-items: center; justify-content: center; position: relative;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text-holder text-center">
+						<h1 style="color: white;">À propos</h1>
+						
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	
+		
+	
 
 	<section class="container" id="about-us">
 
@@ -130,7 +156,7 @@
 
 	</section>
 
-   
+
 	<footer>
 		<div class="footer footer1 section-padding2">
 			<div class="container">
@@ -202,18 +228,18 @@
     <!--::::: ALL JS FILES :::::::-->
 	<script src="assets/js/plugins/jquery.2.1.0.min.js"></script>
 	<script src="assets/js/plugins/bootstrap.min.js"></script>
-	<script src="assets/js/plugins/jquery.nav.js"></script>
-	<script src="assets/js/plugins/jquery.waypoints.min.js"></script>
-	<script src="assets/js/plugins/jquery-modal-video.min.js"></script>
-	<script src="assets/js/plugins/owl.carousel.js"></script>
-	<script src="assets/js/plugins/popper.min.js"></script>
-	<script src="assets/js/plugins/jquery.slicknav.js"></script>
+	<script src="assets/js/plugins/modernizr.min.js"></script>
+	<script src="assets/js/plugins/waypoint.js"></script>
+	<script src="assets/js/plugins/counterup.min.js"></script>
+	<script src="assets/js/plugins/slicknav.min.js"></script>
+	<script src="assets/js/plugins/validate.min.js"></script>
+	<script src="assets/js/plugins/parallax.min.js"></script>
 	<script src="assets/js/plugins/wow.min.js"></script>
-	<script src="assets/js/plugins/splitting.js"></script>
-	<script src="assets/js/plugins/scroll-out.min.js"></script>
-	<script src="assets/js/plugins/jquery.counterup.js"></script>
-	<script src="assets/js/plugins/simpleParallax.js"></script>
+	<script src="assets/js/plugins/modal-video.min.js"></script>
+	<script src="assets/js/plugins/owl.carousel.min.js"></script>
+	<script src="assets/js/plugins/jquery.sticky.min.js"></script>
+	<script src="assets/js/plugins/splitting.min.js"></script>
 	<script src="assets/js/main.js"></script>
-
 </body>
+
 </html>

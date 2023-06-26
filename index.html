@@ -6,7 +6,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Box</title>
+	<title>Box - Accueil</title>
 
 	<!--::::: FABICON ICON :::::::-->
 	<link rel="icon" href="assets/img/logo/fabicon.png">
@@ -22,8 +22,54 @@
 	<link rel="stylesheet" href="assets/css/plugins/splitting.css">
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-I+g2Ckzvh6M4a1MgWAVg0mrRpHns4W2/fp+mei9G2NfgndDrYvJ2W0TmZelUJ6AKg0msIn5W7w9KZ2c4wsHuwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 	<style>
+		.play-button {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.play-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#fff, transparent);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.play-button:hover:before {
+  transform: scale(2);
+  opacity: .3;
+}
+
+.play-button i {
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.play-button:hover i {
+  transform: scale(1.2);
+  color: #ffffff; /* Ajout de la couleur pour le survol */
+}
+
 		.card {
 		  height: 250px;
 		  border-radius: 10px;
@@ -896,10 +942,11 @@
 	<!--::::: FAQ AREA END :::::::-->
 
 	<!--::::: APPS AREA START :::::::-->
-	<div class="apps_area section-padding-bottom"  style="background-image: url(assets/img/screen/B/bg8.png);height: 85%!important;">
-		<div class="container" s>
+	<div class="apps_area section-padding-bottom"  style="background-image: url(assets/img/screen/B/bg8.png);height: auto;">
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-xl-6 align-self-center">
+				<div class="col-lg-8 ">
+					
 					<div class="heading hbm wow fadeInUp">
 						<!-- <h1>Solution d'épargne mobile.</h1> -->
 						<p>Avec l'application mobile de la Caisse Mobile BOX, vous pouvez créer facilement des caisses mobiles pour gérer vos comptes d'épargne en toute autonomie. L'application offre une grande souplesse dans la gestion de vos finances personnelles avec des cotisations flexibles. Téléchargez l'application pour atteindre vos objectifs d'épargne plus facilement.</p>
@@ -917,15 +964,17 @@
 							<span class="app_btn_text">Play Store</span>
 						</a>
 					</div>
+					
 				</div>
-				<div class="col-lg-4 col-xl-6 align-self-center">
-					<div class="apps_app text-right w-50 mt-5">
-						<video src="assets/img/screen/B/video.mp4" style="width: 100%;" controls></video>
-					</div>
-					<!-- <div class="apps_app mobile_img">
-						<video src="assets/img/screen/B/video.mp4"></video>
-					</div> -->
+				<div class="col-lg-4 align-self-center mt-5">
+					<button class="play-button">
+						<a href="assets/img/screen/B/video.mp4">
+							<i class="fas fa-play"></i>
+						  </a>
+					  </button>
+					  
 				</div>
+				
 			</div>
 		</div>
 	</div>

@@ -2,116 +2,39 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
-    .card {
-      height: 200px;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 10px;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      transition: background-color 0.3s ease;
+    .video-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     
-    .card-1 {
-      background: linear-gradient(to right, #3498db, #2980b9);
+    .video-text {
+      flex: 1;
     }
     
-    .card-2 {
-      background: linear-gradient(to right, #2ecc71, #27ae60);
+    .video-icon {
+      font-size: 30px;
+      color: #3498db;
     }
     
-    .card-3 {
-      background: linear-gradient(to right, #9b59b6, #8e44ad);
-    }
-    
-    .card-4 {
-      background: linear-gradient(to right, #e67e22, #d35400);
-    }
-    
-    .card-5 {
-      background: linear-gradient(to right, #e91e63, #c0392b);
-    }
-    
-    .card-6 {
-      background: linear-gradient(to right, #f39c12, #d35400);
-    }
-    
-    .card-1:hover {
-        background: linear-gradient(to right, #f39c12, #d35400);
-    }
-    
-    .card-2:hover {
-        background: linear-gradient(to right, #e91e63, #c0392b);
-    }
-    
-    .card-3:hover {
-        background: linear-gradient(to right, #e67e22, #d35400);
-    }
-    
-    .card-4:hover {
-        background: linear-gradient(to right, #9b59b6, #8e44ad);
-    }
-    
-    .card-5:hover {
-        background: linear-gradient(to right, #2ecc71, #27ae60);
-    }
-    
-    .card-6:hover {
-        background: linear-gradient(to right, #3498db, #2980b9);
-    }
-    
-    .card:hover {
-      cursor: pointer;
+    .video-link {
+      color: #3498db;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card card-1">
-          <h2>Title 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+    <div class="video-container">
+      <div class="video-text">
+        <h2>C'est en flex</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat tristique augue, ac consequat enim luctus sed.</p>
       </div>
-      
-      <div class="col-md-4">
-        <div class="card card-2">
-          <h2>Title 2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card card-3">
-          <h2>Title 3</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card card-4">
-          <h2>Title 4</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card card-5">
-          <h2>Title 5</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card card-6">
-          <h2>Title 6</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
+      <a class="video-link" href="#">Regarder la vidéo <i class="video-icon fas fa-play"></i></a>
     </div>
   </div>
+
 </body>
 </html>

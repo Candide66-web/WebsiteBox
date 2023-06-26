@@ -6,12 +6,12 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Box</title>
+	<title>Box - Contacts</title>
 
-	<!--::::: FABICON ICON :::::::-->
-	<link rel="icon" href="assets/img/logo/fabicon.png">
+	<!--::::: FAVICON ICON :::::::-->
+	<link rel="icon" href="assets/img/logo/favicon.png">
 
-    <!--::::: ALL CSS FILES :::::::-->
+	<!--::::: ALL CSS FILES :::::::-->
 	<link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/plugins/animate.min.css">
 	<link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
@@ -23,32 +23,44 @@
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="style.css">
 
+	<style>
+		.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
+}
+
+	</style>
+
 </head>
 
 <body>
-	
+
 	<!--::::: PRELOADER :::::::-->
 
 	<div class="mesh-loader">
-      <div class="set-one">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-      <div class="set-two">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
-    <!--::::: PRELOADER :::::::-->
+		<div class="set-one">
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+		<div class="set-two">
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--::::: PRELOADER :::::::-->
 
-    <!--::::: HEADER AREA START :::::::-->
-	<header>
+	<!--::::: HEADER AREA START :::::::-->
+	<header style="position:fixed;left: 0;right: 0;top: 0;z-index:10;">
 		<div class="header_area header_absolute" id="header" style="background-color:rgb(0, 0, 0);">
 			<div class="container">
 				<div class="row">
 					<div class="col-6 col-lg-2 align-self-center">
 						<div class="logo">
-							<a href="index.html"><img src="assets/img/logo/logo.png" alt="image"  width="80" ></a>
+							<a href="index.html"><img src="assets/img/logo/logo.png" alt="image" width="80"></a>
 						</div>
 					</div>
 					<div class="col-6 col-lg-7 align-self-center">
@@ -72,7 +84,7 @@
 										<li><a href="single.html">Single Blog</a></li>
 										<li><a href="single_left.html">Single Blog V2</a></li>
 									</ul> -->
-								</li>
+									</li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
@@ -86,9 +98,64 @@
 		</div>
 	</header>
 
-	<section class="" style="height: 60vh;background-image: url(assets/contact.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
+	<section class="image-head-wrapper" style="height:80vh;margin-top:-50px!important;background-image: url(assets/img/abt.jpg);background-repeat: no-repeat;background-position: center;background-size: cover; display: flex; align-items: center; justify-content: center; position: relative;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="inner_text" data-scroll>
+						<h2 style="color:white!important;">Contactez-nous</h2>
+						
+						<!-- <div class="breadcrumb_area">
+							By > <a data-splitting href="index.html">Sam Billings </a> 
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
+	<!-- <section class="feature-style-three p_relative centred">
+		<div class="pattern-layer" style="background-image: url(assets/images/shape/shape-31.png);"></div>
+		<div class="auto-container">
+			<div class="sec-title mb_100">
+				<span class="sub-title">Info contact</span>
+				<h2>Nous aimerions vous aider</h2>
+			</div>
+			<div class="row clearfix">
+				<div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+					<div class="feature-block-three wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+						<div class="inner-box">
+							<div class="block-shape" style="background-image: url(assets/images/shape/shape-32.png);"></div>
+							<div class="icon-box"><i class="icon-48"></i></div>
+							<h3>Localisation</h3>
+							<p>Rue de la Boetie, 75008 Paris <br> France</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+					<div class="feature-block-three wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="inner-box">
+							<div class="icon-box"><i class="icon-49"></i></div>
+							<h3>Adresse Email</h3>
+							<p><a href="mailto:contact@boxcontainner.com">contact@boxcontainner.com</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+					<div class="feature-block-three wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="inner-box">
+							<div class="block-shape" style="background-image: url(assets/images/shape/shape-33.png);"></div>
+							<div class="icon-box"><i class="icon-50"></i></div>
+							<h3>Numéro de Téléphone</h3>
+							<p>En cas d'urgences <br /><a href="tel:+33756894756">+33 7 56 89 47 56</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	
 	<section class="container" id="about-us">
 
 		<h2 class="text-center">Contactez-nous</h2>

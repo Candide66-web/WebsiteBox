@@ -1843,7 +1843,7 @@ COMMON AREA CSS
 }
 
 .scroll li a:hover{
-  color: black;
+  color: orange;
   transition: 1s;
 }
 
